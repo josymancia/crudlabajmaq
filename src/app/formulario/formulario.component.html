@@ -1,0 +1,87 @@
+<div class="cotainer">
+  <div class="form">
+    <hr/>
+    <div class="mb-3 row">
+      <label for="nombre" class="col-sm-2 col-form-label">Nombre:</label>
+      <div class="col-sm-10">
+        <input
+          type="text"
+          class="form-control"
+          id="nombre"
+          placeholder="ingresa tu nombre"
+          [(ngModel)]="nombre"
+        />
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="Apellido" class="col-sm-2 col-form-label">Apellido:</label>
+      <div class="col-sm-10">
+        <input
+          type="text"
+          class="form-control"
+          id="apellido"
+          placeholder="ingresa tu apellido"
+          [(ngModel)]="apellido"
+        />
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="numero-celular" class="col-sm-2 col-form-label"
+        >Número de telefono:</label
+      >
+      <div class="col-sm-10">
+        <input
+          type="number"
+          class="form-control"
+          id="numero-telefono"
+          placeholder="ingresa tu numero de telefono"
+          [(ngModel)]="numero_cel"
+        />
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="correo-electronico" class="col-sm-2 col-form-label"
+        >Correo Electronico:</label
+      >
+      <div class="col-sm-10">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="email@ejemplo.com"
+          id="staticEmail"
+          value=""
+          [(ngModel)]="correo"
+        />
+      </div>
+    </div>
+    <!--<div class="mb-3 row">
+      <label for="genero" class="col-sm-2 col-form-label">Genero:</label>
+      <div class="col-sm-10">
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            id="inlineRadio1"
+            value="option1"
+          />
+          <label class="form-check-label" for="inlineRadio1">Masculino</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="inlineRadioOptions"
+            id="inlineRadio2"
+            value="option2"
+          />
+          <label class="form-check-label" for="inlineRadio2">Femenino</label>
+        </div>
+      </div>
+    </div>-->
+    <button type="submit" class="btn btn-primary btn-lg" (click)="agregarPersona()">
+        Agregar Persona
+      </button>
+    <hr/>
+  </div>
+</div>
